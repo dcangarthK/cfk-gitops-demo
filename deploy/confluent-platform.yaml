@@ -7,7 +7,7 @@ metadata:
 spec:
   replicas: 3
   image:
-    application: confluentinc/cp-zookeeper:7.0.1
+    application: confluentinc/cp-zookeeper:7.0.0
     init: confluentinc/confluent-init-container:2.2.0-1
   dataVolumeCapacity: 10Gi
   logVolumeCapacity: 10Gi
@@ -20,7 +20,7 @@ metadata:
 spec:
   replicas: 3
   image:
-    application: confluentinc/cp-server:7.0.1
+    application: confluentinc/cp-server:7.0.0
     init: confluentinc/confluent-init-container:2.2.0-1
   dataVolumeCapacity: 10Gi
   metricReporter:
@@ -34,7 +34,7 @@ metadata:
 spec:
   replicas: 0
   image:
-    application: confluentinc/cp-server-connect:7.0.1
+    application: confluentinc/cp-server-connect:7.0.0
     init: confluentinc/confluent-init-container:2.2.0-1
   dependencies:
     kafka:
@@ -48,7 +48,7 @@ metadata:
 spec:
   replicas: 0
   image:
-    application: confluentinc/cp-enterprise-control-center:7.0.1
+    application: confluentinc/cp-enterprise-control-center:7.0.0
     init: confluentinc/confluent-init-container:2.2.0-1
   dataVolumeCapacity: 10Gi
   dependencies:
@@ -66,7 +66,7 @@ metadata:
 spec:
   replicas: 0
   image:
-    application: confluentinc/cp-schema-registry:7.0.1
+    application: confluentinc/cp-schema-registry:7.0.0
     init: confluentinc/confluent-init-container:2.2.0-1
 ---
 apiVersion: platform.confluent.io/v1beta1
@@ -77,5 +77,5 @@ metadata:
 spec:
   replicas: 0
   image:
-    application: confluentinc/cp-kafka-rest:7.0.1
+    application: confluentinc/cp-kafka-rest:7.0.0
     init: confluentinc/confluent-init-container:2.2.0-1
