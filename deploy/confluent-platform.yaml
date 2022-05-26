@@ -32,7 +32,7 @@ metadata:
   name: connect
   namespace: cfk-gitops-demo
 spec:
-  replicas: 1 
+  replicas: 0
   image:
     application: confluentinc/cp-server-connect:7.0.1
     init: confluentinc/confluent-init-container:2.2.0-1
@@ -64,7 +64,7 @@ metadata:
   name: schemaregistry
   namespace: cfk-gitops-demo
 spec:
-  replicas: 2
+  replicas: 0
   image:
     application: confluentinc/cp-schema-registry:7.0.1
     init: confluentinc/confluent-init-container:2.2.0-1
@@ -75,7 +75,7 @@ metadata:
   name: kafkarestproxy
   namespace: cfk-gitops-demo
 spec:
-  replicas: 1
+  replicas: 0
   image:
     application: confluentinc/cp-kafka-rest:7.0.1
     init: confluentinc/confluent-init-container:2.2.0-1
